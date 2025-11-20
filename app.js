@@ -1,190 +1,301 @@
-// =========================================    1-masala   ========================================================
-// =================================================================================================================
+// ========================================================================================================
+//        1-masala
+// ========================================================================================================
 
-// function getUserInfo(user) {
-//   return "Foydalanuvchi ismi " + user.name + ", yoshi: " + user.age;
+
+// Berilgan arrayga bitta qiymat qoвЂshing.
+// Foydalanish: push()
+
+// function addToEnd(arr, value) {
+//   arr.push(value);
+//   return arr;
 // }
 
-// const user = {
-//   name: "Ali",
-//   age: 25,
-// };
-
-// console.log(getUserInfo(user));
+// const result = addToEnd([1, 2, 3], 4);  
+// console.log(result);                
 
 
-// =========================================2-masala========================================================
-// =================================================================================================================
+// ========================================================================================================
+//        2-masala
+// ========================================================================================================
 
 
-// const product = {
-//   name: "Telefon",
-//   namber: 1000,
+// Arrayning oxirgi elementini olib tashlang.
+// Foydalanish: pop()
+
+// function removeLast(arr) {
+//   arr.pop();
+//   return arr;
 // }
 
-// function addTax(product) {
-//   product.priceWithTax = product.namber + 120;
-//   return product;
+// console.log(removeLast([1, 2, 3, 4]));
+
+
+
+// ========================================================================================================
+//        3-masala
+// ========================================================================================================
+
+
+// Array boshiga yangi element qoвЂshing.
+// Foydalanish: unshift()
+
+// function addToStart(arr, value) {
+//   arr.unshift(value);   
+//   return arr;      
 // }
 
-// console.log(addTax(product));
+// console.log(addToStart([2, 3, 4], 1));
 
 
-// =========================================4-masala========================================================
-// =================================================================================================================
+// ========================================================================================================
+//        4-masala
+// ========================================================================================================
 
 
-// function carInfo(car) {
-//   return "Bu " + car.color + " ragnli " + car.model + ", " + car.year + "-yill";
+// function removeFirst(arr) {
+//   arr.shift();
+//   return arr;
 // }
 
-// const car = {
-//   model: "Cobalt",
-// year: 2022,
-//   color: "oq"
+// console.log(removeFirst([1, 2, 3, 4]));
+
+// ========================================================================================================
+//        5-masala
+// ========================================================================================================
+
+
+// Stringdagi boвЂsh joylarni olib tashlang.
+// Foydalanish: trim()
+
+// function cleanString(str) {
+//   return str.trim(); 
 // }
 
-// console.log(carInfo(car));
+// console.log(cleanString("   Salom   "));
+
+// ========================================================================================================
+//        6-masala
+// ========================================================================================================
 
 
-// =========================================5-masala========================================================
-// =================================================================================================================
+// Berilgan string katta harflarga oвЂtkazilsin.
+// Foydalanish: toUpperCase()
 
-
-// function hasEmail(user1) {
-//   return user1.email || false;
+// function shout(str) {
+//   return str.toUpperCase();
 // }
 
-// const user1 = {
-//   name: "Ali",
-//   email: "ali@gmail.com"
+// console.log(shout("salon dunyo!"));
+
+// ========================================================================================================
+//        7-masala
+// ========================================================================================================
+
+
+// Massivda qiymat bor-yoвЂqligini tekshiring.
+// Foydalanish: includes()
+
+// function hasValue(arr, value) {
+//   return arr.includes(value);
 // }
 
-// const user2 = {
-//   name: "Ali",
+// console.log(hasValue([1, 2, 3, 4], 3));
+
+// ========================================================================================================
+//        8-masala
+// ========================================================================================================
+
+// Berilgan soвЂz "a" harfi bilan boshlanishini tekshiring.
+// Foydalanish: startsWith()
+
+// function startsWithA(str) {
+//   return str.startsWith("a");
 // }
 
-// console.log(hasEmail(user1));
-// console.log(hasEmail(user2));
+// console.log(startsWithA("Asila"));
 
+// ========================================================================================================
+//        9-masala
+// ========================================================================================================
 
-// =========================================6-masala========================================================
-// =================================================================================================================
+// Berilgan array ichida "apple" borligini aniqlang.
+// Foydalanish: includes()
 
-
-// function calculateSpeed(car) {
-//   car.speed = car.distance / car.time;
-//   return car;
+// function containsApple(arr) {
+//   return arr.includes("apple");
 // }
 
-// const car = {
-//   model: "Cobalt",
-//   time: 3,
-//   distance: 150
+// console.log(containsApple(["manti", "hilola", "apple"]));
+
+// ========================================================================================================
+//        10-masala
+// ========================================================================================================
+
+// Object ichidagi barcha kalitlarni arrayga aylantiring.
+// Foydalanish: Object.keys()
+
+// function getKeys(obj) {
+//   return Object.keys(obj);
 // }
 
-// console.log(calculateSpeed(car));
+// const obj = { name: "Aziz", age: 15, city: "Tashkent" };
 
+// console.log(getKeys(obj));
 
+// ========================================================================================================
+//        11-masala
+// ========================================================================================================
 
-// =========================================7-masala========================================================
-// =================================================================================================================
+// Object ichidagi barcha qiymatlarni arrayga oвЂtkazing.
+// Foydalanish: Object.values()
 
-
-    // function calculateWorkTime(worker) {
-    // worker.hoursWorked = worker.end - worker.start;
-    // return worker;
-    // }
-
-    // const worker = {
-    // name: "Ali",
-    // start: 9,
-    // end: 18
-    // }
-
-    // console.log(calculateWorkTime(worker));
-
-
-// =========================================8-masala========================================================
-// =================================================================================================================
-
-
-// function calculateVolume(cube) {
-//   cube.volume = cube.side ** 3;
-//   return cube;
-// }
-// const cube = {
-//   side: 4,
-// };
-
-// console.log(calculateVolume(cube));
-
-
-// =========================================9-masala========================================================
-// =================================================================================================================
-
-
-// function isPasswordStrong(user) {
-//   user.isStrong = user.password.length = true;
-//   user2.isStrong = user2.password.length = false;
-//   return user;
+// function getValues(obj) {
+//   return Object.values(obj);
 // }
 
-// const user1 = {
-//   username: "test",
-//   password: "12345678"
-// };
+// const obj = { name: "Aziz", age: 15, city: "Tashkent" };
 
-// const user2 = {
-//   username: "test",
-//   password: "1234"
-// };
+// console.log(getValues(obj));
 
-// console.log(isPasswordStrong(user1));
-// console.log(isPasswordStrong(user2));
+// ========================================================================================================
+//        12-masala
+// ========================================================================================================
+
+// String ichidagi barcha boвЂsh joylarni olib tashlang.
+// Foydalanish: replaceAll(" ", "")
+
+// function removeSpaces(str) {
+//   return str.replaceAll(" ", "");
+// }
+// console.log(removeSpaces("S a l o m   D u n y o "));
 
 
-// =========================================10-masala========================================================
-// =================================================================================================================
+// ========================================================================================================
+//        13-masala
+// ========================================================================================================
 
+// Arrayning teskari koвЂrinishini qaytaring.
+// Foydalanish: reverse()
 
-// function calculateBirthYear(person) {
-//   person.birthYear + person.age;
-//   return person;
+// function reverseArray(arr) {
+//   return arr.reverse(); 
 // }
 
-// const person = {
-//   name: 'Laylo',
-//   age: 20,
-//   birthYear: 2005,
-// };
+// console.log(reverseArray([1, 2, 3, 4, 5]));
 
-// console.log(calculateBirthYear(person));
+// ========================================================================================================
+//        14-masala
+// ========================================================================================================
+
+// Object.entries orqali objectni key-value arrayga aylantiring.
+// Foydalanish: Object.entries()
+
+// function objectToEntries(obj) {
+//   return Object.entries(obj);
+// }
+// const obj = { name: "Aziz", age: 15, city: "Tashkent" };
+
+// console.log(objectToEntries(obj));
 
 
+// ========================================================================================================
+//        15-masala
+// ========================================================================================================
 
-// =========================================11-masala========================================================
-// =================================================================================================================
+// Object ichida "admin" degan key bormi?
+// Foydalanish: hasOwnProperty()
 
-// function updateUser(user) {
-//   Object.isFrozen(user) + console.log("Object is frozen");
+// function hasAdmin(obj) {
+//   return obj.hasOwnProperty("admin");
 // }
 
-// const user = Object.freeze({ name: "Ulug'bek", age: 20 });
-// updateUser(user);
+// const obj = { user: "Aziz", age: 15, admin: "odam" };
+
+// console.log(hasAdmin(obj));
+
+// ========================================================================================================
+//        16-masala
+// ========================================================================================================
+
+// Stringning oxirgi 3 ta harfini ajrating.
+// Foydalanish: slice()
+
+// function lastThree(str) {
+//   return str.slice(-3);
+// }
+// console.log(lastThree("bozorchi"));
 
 
+// ========================================================================================================
+//        17-masala
+// ========================================================================================================
 
-// =========================================12-masala========================================================
-// =================================================================================================================
+// Object.entries() + fromEntries() orqali object ichidagi "age" qiymatiga 1 qoвЂshing.
 
-
-// function checkFrozenStatus(ob) {
-//   if (Object.isFrozen(ob)) {
-//     return "Frozen";
-//   } else {
-//     return "Not frozen";
-//   }
+// function increaseAge(obj) {
+//   obj.age = obj.age + 1; 
+//   return obj;
 // }
 
- 
+// const user = { name: "Aziz", age: 15 };
+// increaseAge(user);
+
+// console.log(Object.entries(user));
+
+
+// ========================================================================================================
+//        18-masala
+// ========================================================================================================
+
+// Stringni ichidagi har bir boвЂshliqdan keyin vergul qoвЂshing.
+// Masalan: "salom dunyo" => "Salom, dunyo"
+
+// function addComma(str) {
+//   return str.replaceAll(" ", ", ");
+// }
+// console.log(addComma("Hello word"));
+
+
+// ========================================================================================================
+//        19-masala
+// ========================================================================================================
+
+// Massivda oxirgi boвЂlib qayerda "banana" turganini toping.
+// Foydalanish: lastIndexOf()
+
+// function lastBananaIndex(arr) {
+//   return arr.lastIndexOf("banana");
+// }
+// console.log(lastBananaIndex(["nice", "banan", "lemon", "apple", "greed"]));
+
+// ========================================================================================================
+//        20-masala
+// ========================================================================================================
+
+// Massivda 2-dan 5-gacha boвЂlgan elementlarni kesib oling.
+// Foydalanish: slice()
+
+// function sliceMiddle(arr) {
+//   return arr.slice(2, 5);
+// }
+
+
+// const mevalar = ["nice", "banan", "lemon", "apple", "greed"];
+
+// console.log(sliceMiddle(mevalar));  
+
+
+// ========================================================================================================
+//        21-masala
+// ========================================================================================================
+
+// String ichida "javascript" soвЂzini "JS" bilan almashtiring.
+// Foydalanish: replaceAll()
+
+// function replaceJavaScript(str) {
+//   return str.replaceAll("javascript", "JS");
+// }
+
+// console.log(replaceJavaScript("javascript juda ajoyib va tushunarsiz"));
+
