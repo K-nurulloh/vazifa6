@@ -86,7 +86,7 @@
 //   return str.toUpperCase();
 // }
 
-// console.log(shout("salon dunyo!"));
+// console.log(shout("salon dunyo"));
 
 // ========================================================================================================
 //        7-masala
