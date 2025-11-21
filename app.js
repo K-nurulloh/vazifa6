@@ -281,9 +281,9 @@
 // }
 
 
-// const mevalar = ["nice", "banan", "lemon", "apple", "greed"];
+// const arr = ["nice", "banan", "lemon", "apple", "greed"];
 
-// console.log(sliceMiddle(mevalar));  
+// console.log(sliceMiddle(arr));  
 
 
 // ========================================================================================================
