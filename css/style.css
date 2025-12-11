@@ -1,0 +1,53 @@
+body {
+    background-image: url(/goatf.jpg);
+}
+
+.soccer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 500px;
+    margin-bottom: 500px;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.polya {
+    position: relative;
+}
+
+.ball {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 200px;
+    transition: 0.3s linear;
+    transform-origin: center;
+    animation: roll 1s linear infinite;
+}
+
+.ranoldo {
+    width: 300px;
+    height: 300px;
+    margin-right: 800px;
+    border-radius: 200px;
+    transform-origin: center;
+    animation: roll 1s linear infinite;
+}
+
+.messi {
+    width: 300px;
+    height: 300px;
+    margin-left: 800px;
+    border-radius: 200px;
+    transform-origin: center;
+    animation: roll 1s linear infinite;
+}
+@keyframes roll {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
