@@ -1,13 +1,14 @@
 body {
     background-image: url(/goatf.jpg);
+    background-size: cover;
 }
 
 .soccer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 500px;
-    margin-bottom: 500px;
+    margin-bottom: 180px;
+    margin-top: 100px;
 }
 
 .head {
@@ -18,11 +19,12 @@ body {
 
 .polya {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ball {
-    width: 150px;
-    height: 150px;
     position: absolute;
     border-radius: 200px;
     transition: 0.3s linear;
@@ -31,19 +33,15 @@ body {
 }
 
 .ranoldo {
-    width: 300px;
-    height: 300px;
-    margin-right: 800px;
-    border-radius: 200px;
+    margin-right: 100px;
+    border-radius: 100px;
     transform-origin: center;
     animation: roll 1s linear infinite;
 }
 
 .messi {
-    width: 300px;
-    height: 300px;
-    margin-left: 800px;
-    border-radius: 200px;
+    margin-left: 100px;
+    border-radius: 100px;
     transform-origin: center;
     animation: roll 1s linear infinite;
 }
